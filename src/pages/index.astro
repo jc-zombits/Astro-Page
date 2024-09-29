@@ -1,16 +1,24 @@
 ---
-
+import NavBar from "../components/NavBar.astro";
+import Slide from "../components/Slide.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Section from "../components/Section.astro"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<style>
+	h1 {
+		text-align: center;
+		font-size: 3rem;
+		color: rgb(13, 73, 73);
+	}
+</style>
+
+<BaseLayout title="Página Principal" description="Esta es la página principal">
+	<NavBar></NavBar>
+
+	<h1>Astro - Página Principal</h1>
+
+	<Slide></Slide>
+
+	<Section></Section>
+</BaseLayout>

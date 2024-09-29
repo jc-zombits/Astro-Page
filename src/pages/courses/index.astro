@@ -1,0 +1,19 @@
+---
+import AnimationStroke from "../../components/AnimationStroke.astro";
+import NavBar from "../../components/NavBar.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<style>
+	h1 {
+		text-align: center;
+		font-size: 3rem;
+		color: rgb(13, 73, 73);
+	}
+</style>
+
+<BaseLayout title="Cursos y más" description="Encuantra toda la información acerca de nuestros cursos">
+    <NavBar></NavBar>
+
+	<AnimationStroke></AnimationStroke>
+</BaseLayout>
