@@ -1,0 +1,106 @@
+---
+
+---
+
+<style>
+    .letter {
+            display: inline-block;
+            opacity: 0; /* Inicialmente ocultas */
+            transform: translateY(-50px); /* Inicia arriba */
+            animation: fall 0.6s forwards; /* Animación de caída */
+        }
+
+        /* Animación de caída */
+        @keyframes fall {
+            to {
+                opacity: 1; /* Hace la letra visible */
+                transform: translateY(0); /* Regresa a su posición normal */
+            }
+        }
+
+    h2 {
+        font-size: 26px;
+        color: orangered;
+        animation: colorChange 3s infinite;
+    }
+
+    @keyframes colorChange {
+        0% {
+            color: red;
+        }
+        25% {
+            color: yellow;
+        }
+        50% {
+            color: rgb(95, 95, 250);
+        }
+        75% {
+            color: cyan;
+        }
+        100% {
+            color: rgb(11, 199, 83);
+        }
+    }
+
+    p {
+        color: yellow;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(223, 97, 223);
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+    .news {
+        background: #36260d;
+        width: 75%;
+        margin: 0 8.5rem;
+        padding: 20px 40px;
+
+    }
+</style>
+
+<div class="news">
+    <h2>
+        <span class="letter" style="animation-delay: 0s;">A</span>
+        <span class="letter" style="animation-delay: 0.1s;">s</span>
+        <span class="letter" style="animation-delay: 0.2s;">t</span>
+        <span class="letter" style="animation-delay: 0.3s;">r</span>
+        <span class="letter" style="animation-delay: 0.4s;">o</span>
+        <span class="letter" style="animation-delay: 0.5s;">J</span>
+        <span class="letter" style="animation-delay: 0.6s;">S</span>
+    </h2>
+    <p><a href="https://docs.astro.build/en/getting-started/">AstroJS</a> es un framework moderno diseñado para crear sitios web rápidos y optimizados. Su enfoque principal es minimizar la cantidad de JavaScript enviado al cliente, lo que mejora el rendimiento. Astro permite usar múltiples frameworks de interfaz de usuario, como React, Vue, Svelte, entre otros, en una sola aplicación, facilitando la integración de diferentes tecnologías. Una de sus características clave es la generación de sitios estáticos, lo que lo hace ideal para blogs, páginas de marketing y sitios web de documentación. Además, con su arquitectura "Island Architecture", solo las partes interactivas de la página cargan JavaScript, mientras que el resto permanece estático. Esto permite una experiencia de usuario rápida y eficiente, manteniendo la simplicidad en el desarrollo de interfaces web.</p>
+
+    <h2>
+        <span class="letter" style="animation-delay: 0s;">P</span>
+        <span class="letter" style="animation-delay: 0.1s;">y</span>
+        <span class="letter" style="animation-delay: 0.2s;">t</span>
+        <span class="letter" style="animation-delay: 0.3s;">h</span>
+        <span class="letter" style="animation-delay: 0.4s;">o</span>
+        <span class="letter" style="animation-delay: 0.5s;">n</span>
+    </h2>
+    <p><a href="https://docs.python.org/3/">Python</a> es un lenguaje de programación de alto nivel, conocido por su simplicidad y legibilidad, lo que lo convierte en una excelente opción tanto para principiantes como para desarrolladores experimentados. Creado por Guido van Rossum y lanzado en 1991, Python ha ganado popularidad en diversas áreas, como el desarrollo web, la ciencia de datos, la inteligencia artificial y la automatización de tareas. Su sintaxis clara y concisa permite a los programadores expresar conceptos complejos de manera sencilla. Además, cuenta con una amplia gama de bibliotecas y frameworks, como Django para el desarrollo web y Pandas para el análisis de datos, que facilitan la creación de aplicaciones robustas. La comunidad activa y el soporte continuo aseguran que Python siga siendo relevante y en constante evolución.</p>
+
+    <h2>
+        <span class="letter" style="animation-delay: 0s;">R</span>
+        <span class="letter" style="animation-delay: 0.1s;">u</span>
+        <span class="letter" style="animation-delay: 0.2s;">s</span>
+        <span class="letter" style="animation-delay: 0.3s;">t</span>
+    </h2>
+    <p><a href="https://www.rust-lang.org/es/learn">Rust</a> es un lenguaje de programación de sistemas diseñado para ser seguro, concurrente y práctico. Lanzado por primera vez en 2010, Rust se ha ganado la reputación de ofrecer un alto rendimiento comparable al de C y C++, al tiempo que proporciona características modernas que minimizan errores comunes, como los errores de memoria. Su sistema de propiedad, que gestiona el acceso a la memoria sin necesidad de un recolector de basura, garantiza la seguridad y eficiencia en el uso de recursos. Rust es especialmente popular en el desarrollo de software embebido, sistemas operativos y aplicaciones de alto rendimiento. Además, su comunidad activa y su enfoque en la documentación hacen que sea accesible para los nuevos desarrolladores, fomentando su adopción en diversos proyectos y entornos.</p>
+
+    <h2>
+        <span class="letter" style="animation-delay: 0s;">S</span>
+        <span class="letter" style="animation-delay: 0.1s;">o</span>
+        <span class="letter" style="animation-delay: 0.2s;">l</span>
+        <span class="letter" style="animation-delay: 0.3s;">i</span>
+        <span class="letter" style="animation-delay: 0.4s;">d</span>
+        <span class="letter" style="animation-delay: 0.5s;">i</span>
+        <span class="letter" style="animation-delay: 0.6s;">t</span>
+        <span class="letter" style="animation-delay: 0.7s;">y</span>
+    </h2>
+    <p><a href="https://docs.soliditylang.org/en/v0.8.27/">Solidity</a> es un lenguaje de programación diseñado específicamente para desarrollar contratos inteligentes en la blockchain de Ethereum. Lanzado en 2014, Solidity permite a los desarrolladores crear aplicaciones descentralizadas (dApps) que funcionan en una red blockchain, garantizando la seguridad y transparencia en las transacciones. Su sintaxis es similar a JavaScript, lo que facilita el aprendizaje para aquellos con experiencia en programación web. Solidity admite características como la herencia y la bibliotecas, permitiendo a los desarrolladores reutilizar código y crear contratos más complejos. A medida que el ecosistema de blockchain crece, Solidity se ha convertido en un estándar en el desarrollo de contratos inteligentes, impulsando innovaciones en finanzas descentralizadas (DeFi), tokens no fungibles (NFT) y otros usos en la tecnología blockchain.</p>
+</div>
