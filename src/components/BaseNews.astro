@@ -7,7 +7,7 @@
             display: inline-block;
             opacity: 0; /* Inicialmente ocultas */
             transform: translateY(-50px); /* Inicia arriba */
-            animation: fall 0.6s forwards; /* Animación de caída */
+            animation: fall 0.7s forwards; /* Animación de caída */
         }
 
         /* Animación de caída */
@@ -43,22 +43,29 @@
     }
 
     p {
-        color: yellow;
+        color: rgb(111, 245, 106);
     }
 
     a {
         text-decoration: none;
-        color: rgb(223, 97, 223);
+        color: rgb(63, 4, 63);
         font-weight: bold;
         font-size: 18px;
     }
     
     .news {
-        background: #36260d;
+        background: #8d5534;
         width: 75%;
         margin: 0 8.5rem;
         padding: 20px 40px;
+        box-shadow: 2px 2px 10px 10px orangered;
+        transition: box-shadow 0.5s ease-in-out;
+        border-radius: 5px;
+    }
 
+    .news:hover {
+        box-shadow: 0 0 20px rgba(255, 69, 0, 0.8);
+        background: #804d30;
     }
 </style>
 

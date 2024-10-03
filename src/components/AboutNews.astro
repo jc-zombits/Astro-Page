@@ -1,0 +1,129 @@
+---
+
+---
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        max-width: 300px;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .card-description {
+        font-size: 1em;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    .card-button {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: #041e3a;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1em;
+        transition: background-color 0.2s;
+    }
+
+    .card-button:hover {
+        background-color: #0056b3;
+    }
+
+    .other {
+        margin: 30px;
+        padding: 30px;
+        color: rgb(183, 172, 245);
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .other h2 {
+        padding-bottom: 2em;
+    }
+</style>
+
+<div class="card-container">
+    <!-- Tarjeta 1 -->
+    <div class="card">
+        <img src="../../public/img/astro.jpg" alt="Imagen de ejemplo" class="card-image">
+        <div class="card-content">
+            <h2 class="card-title">Astro JS</h2>
+            <p class="card-description">Astro es un framework de aplicaciones web basado en JavaScript de código abierto. Fue creado por Fred K. Schott y varios colaboradores, quienes a día de hoy lo siguen manteniendo junto con la ayuda de cientos de usuarios que mejoran el código gracias a su naturaleza de código libre y fácil de configurar.</p>
+            <a href="#" class="card-button">Leer más</a>
+        </div>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div class="card">
+        <img src="../../public/img/python.png" alt="Imagen de ejemplo" class="card-image">
+        <div class="card-content">
+            <h2 class="card-title">Python</h2>
+            <p class="card-description">Python es un lenguaje de alto nivel de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código. Se trata de un lenguaje de programación multiparadigma, ya que soporta parcialmente la orientación a objetos, programación imperativa y, en menor medida, programación funcional.</p>
+            <a href="#" class="card-button">Leer más</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="../../public/img/rust.jpg" alt="Imagen de ejemplo" class="card-image">
+        <div class="card-content">
+            <h2 class="card-title">Rust</h2>
+            <p class="card-description">Rust es un lenguaje de programación compilado, de propósito general y multiparadigma que está siendo desarrollado por Fundación Rust. Es un lenguaje de programación multiparadigmático que soporta programación funcional pura, por procedimientos, imperativa y orientada a objetos. Es un lenguaje genial.</p>
+            <a href="#" class="card-button">Leer más</a>
+        </div>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div class="card">
+        <img src="../../public/img/solidity.png" alt="Imagen de ejemplo" class="card-image">
+        <div class="card-content">
+            <h2 class="card-title">Solidity</h2>
+            <p class="card-description">Solidity es un lenguaje de programación orientado a objetos para escribir contratos inteligentes.​ Se utiliza para implementar contratos inteligentes​ en varias plataformas blockchain, la más destacada, Ethereum. También permite la creación de aplicaciones descentralizadas para una mejor gestión de las mismas.</p>
+            <a href="#" class="card-button">Leer más</a>
+        </div>
+    </div>
+</div>
+
+<div class="other">
+    <h2>Otros proyectos</h2>
+    <img src="../../public/img/solidity.png" alt="Imagen de ejemplo" class="card-image">
+</div>
